@@ -33,10 +33,7 @@ DELIVERABLE
 
 
 # Your code below
-name = input("Enter your name:")
-age = input("Enter you age:")
+name = input("What is your name? ")
+age = int(input("What is your age? "))
 
-print("My name is ", name )
-print("My age is ", age)
-
-print("My name is " + name + " and my age is " + age)
+print("My name is", name, "and my age is", age)
