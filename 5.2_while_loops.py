@@ -28,10 +28,29 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
+# 1. In: A text string typed by the user indicating if they want to continue ("yes" or "no").
+# 2. Process: First, a simple while loop counts from 0 to 4. Then, an infinite `while True` loop repeatedly asks the user for input. The input is cleaned using `.strip().lower()` to ignore accidental spaces and capital letters. If the input matches "yes" or "no", a `break` statement stops the loop.
+# 3. Out: The program prints the attempt number for the first loop and a message indicating whether the user chose to continue or not in the second loop.
 # 4. My stop condition, my attempt limit, my summary:
+#    - Stop condition: The user types exactly "yes" or "no" (case and space insensitive).
+#    - Attempt limit: There is NO attempt limit for the input loop. Because it uses `while True`, it will run infinitely until a valid answer is provided.
+#    - Summary: A final print statement confirming whether the user chose to continue or not before exiting the loop.
 
 
 # Your code below
+i = 0
+while i < 5:
+    print("Attempt number:", i + 1)
+    i = i + 1
+
+
+while True :
+    answer = input("Do you want to continue? (yes/no): ")
+    if answer.strip().lower() == "yes":
+        print("You chose to continue.")
+        break
+    elif answer.strip().lower() == "no":
+        print("You chose not to continue.")
+        break
+    else:
+        print("Invalid input. Please enter 'yes' or 'no'.")
