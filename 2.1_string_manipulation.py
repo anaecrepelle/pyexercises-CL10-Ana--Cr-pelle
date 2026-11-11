@@ -24,10 +24,27 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
+# 1. In: A sentence typed by the user
+# 2. Process: The program applies four distinct string methods to alter the text's formatting or characters.
+# 3. Out: Four new strings printed to the screen, each showing a different transformed version of the original sentence.
 # 4. My four transformations, and when each is useful:
+#    - strip(): Removes leading and trailing whitespace. Useful for cleaning up user input.
+#    - lower(): Converts all characters to lowercase. Useful for case-insensitive comparisons.
+#    - upper(): Converts all characters to uppercase. Useful for emphasizing text or creating uniformity
+#    - title(): Capitalizes the first letter of each word. Useful for formatting titles or headings.
 
 
 # Your code below
+sentence = input("Please enter a sentence: ")
+
+transformed_strip = sentence.strip()
+print(f"Stripped: '{transformed_strip}'")
+
+transformed_lower = sentence.lower()
+print(f"Lowercase: '{transformed_lower}'")
+
+transformed_upper = sentence.upper()
+print(f"Uppercase: '{transformed_upper}'")
+
+transformed_title = sentence.title()
+print(f"Title Case: '{transformed_title}'")
