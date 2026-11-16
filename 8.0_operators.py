@@ -12,12 +12,22 @@ comparison between them and of the logical combinations of those results.
 
 ANSWER THESE FIRST, in comments
 
-What goes in?
-2. What happens to it?
+#1. What goes in? 
+# The program uses two values, 10 and "10".
 
-3. What comes out?
+# 2. What happens to it?
+# The program compares the two values using comparison operators.
+# It also combines the comparison results using logical operators.
 
-4. Which two values did you pick, and which comparison result surprised you?
+# 3. What comes out?
+# The program displays a table showing each comparison
+# and its result as True or False.
+
+# 4. Which two values did you pick, and which comparison result surprised you?
+# I chose 10 as a number and "10" as text.
+# I expected them to be equal because they look the same.
+# I was surprised that 10 == "10" is False.
+# This happens because they have different data types.
 
 
 
