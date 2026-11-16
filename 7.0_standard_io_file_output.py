@@ -36,3 +36,15 @@ DELIVERABLE
 
 
 # Your code below
+print("Please enter the following information to record an entry:")
+first_name = input("First Name: ")
+last_name = input("Last Name: ")
+birth = input("Date of Birth (YYYY-MM-DD): ")
+student_number = input("Student number: ")
+
+with open("7.0_student_data.csv", "a" , newline="") as file:
+    file.write("First Name,Last Name,Date of Birth,Student Number\n")
+    file.write(first_name + "," + last_name + "," + birth + "," + student_number + "\n")
+
+print("Data saved successfully!")
+

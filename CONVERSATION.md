@@ -143,3 +143,25 @@ def calculate_profit(cost, revenue):
 ```
 
 What keyword tells Python to send a value back from the function?
+
+---
+## 2026-11-16 13:17, in .
+
+**Me:** how to open a csv file in python
+
+**Tutor:**
+
+Opening a CSV file in Python is done with the built-in `csv` module.
+
+```python
+import csv
+
+# TODO: replace 'data.csv' with your file path
+with open('data.csv', mode='r', encoding='utf-8') as file:
+    reader = csv.reader(file)          # basic reader
+    # reader = csv.DictReader(file)    # header-based reader
+    for row in reader:
+        print(row)                     # each row is a list of strings
+```
+
+What argument tells `open()` how to handle the file’s text encoding?
