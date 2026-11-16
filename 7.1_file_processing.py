@@ -12,7 +12,7 @@ DO THIS BEFORE ANYTHING ELSE
     problems. Find them yourself.
 
     This step is not optional and it is graded. An assistant cannot see your file.
-
+    
 ANSWER THESE, in comments, after the list of problems
     1. What goes in?
     2. What happens to it?  (one line per problem you found, and how you deal with it)
@@ -37,10 +37,11 @@ DELIVERABLE
 """
 
 # What is wrong with names.txt (found by reading it, not by guessing):
-# -
-# -
-# -
-# -
+# - Some names are written in lowercase letters.
+# - Some names are written in uppercase letters.
+# - Some lines have extra spaces at the beginning.
+# - There are empty lines between names.
+# - The names are not sorted by last name.
 
 # 1. In:
 # 2. Process, problem by problem:
@@ -49,3 +50,44 @@ DELIVERABLE
 
 
 # Your code below
+
+with open("names.txt", "r", encoding="utf-8") as file:
+    names = file.readlines()
+
+cleaned_names = []
+
+for name in names:
+    name = " ".join(name.split())
+
+    if name:
+        name = name.title()
+        name = name.replace("Van Rossum", "van Rossum")
+        cleaned_names.append(name)
+
+# Create a function to find the last name
+def get_last_name(name):
+    if name.lower().endswith("van rossum"):
+        return "van rossum"
+    return name.split()[-1].lower()
+
+# Sort the names by last name
+cleaned_names.sort(key=get_last_name)
+
+# Save the cleaned names in a new file
+with open("cleaned_names.txt", "w", encoding="utf-8") as file:
+    for name in cleaned_names:
+        file.write(name + "\n")
+
+# Display the cleaned names
+print("Cleaned and sorted names:")
+
+for name in cleaned_names:
+    print(name)
+
+# Count the original lines and cleaned lines
+print("Original lines:", len(names))
+print("Cleaned lines:", len(cleaned_names))
+
+# Display the first and last names
+print("First name in sorted list:", cleaned_names[0])
+print("Last name in sorted list:", cleaned_names[-1])
