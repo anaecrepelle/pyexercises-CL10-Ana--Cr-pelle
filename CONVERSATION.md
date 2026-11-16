@@ -73,3 +73,56 @@ Refused, off topic.
 **Tutor:**
 
 Refused, off topic.
+
+---
+## 2026-11-11 17:32, in .
+
+**Me:** how to have the length of a word in python
+
+**Tutor:**
+
+Finding the length of a word in Python.
+
+```python
+# TODO: write a function that returns the length of a given word
+def word_length(word):
+    # TODO: return the length of the word
+    pass
+```
+
+What is the name of the built-in function that gives the length of a sequence?
+
+---
+## 2026-11-11 17:33, in .
+
+**Me:** how to do an addition of two numbers in python
+
+**Tutor:**
+
+Adding two numbers is done with the `+` operator.
+
+```python
+# TODO: replace a and b with your numbers
+a = 5
+b = 3
+result = a + b
+```
+
+What is the name of the operator used to add two numbers?
+
+---
+## 2026-11-16 12:54, in .
+
+**Me:** how to write a function in python
+
+**Tutor:**
+
+A function is a named block of code that performs a single task.
+
+```python
+def greet(name):
+    # TODO: return the string "Hello, " followed by the name
+    pass
+```
+
+What argument does the function `greet` expect?
