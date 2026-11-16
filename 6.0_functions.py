@@ -26,10 +26,12 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My function name, and why return rather than print:
+# 1. In: a list of numbers
+# 2. Process: The function will take the list of numbers as input, iterate through the list, and compute the sum of the numbers. It will then return the computed sum.
+# 3. Out: a single number representing the sum of the input list
+# 4. My function name, and why return rather than print: 
+# Function name: `add_numbers`. The name clearly indicates that the function is responsible for adding two numbers together. It is descriptive and conveys the purpose of the function without needing to read the code.
+# Return vs. Print: `print` only displays text on the screen for a human to read, but the data is then lost. `return` actually hands the computed data back to the program so it can be stored in a variable, used in further calculations, or saved to a database.
 
 
 # Your code below
