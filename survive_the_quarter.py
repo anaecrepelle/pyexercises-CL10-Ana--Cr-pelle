@@ -1,5 +1,4 @@
-Anaé Crépelle CL10
-
+# Anaé CREPELLE CL10
 
 # 1. What goes in? 
 #    The scenarios_C.csv file uses commas as separators. The columns are Event, Day, Decision 1-3, Reputation 1-3, Budget 1-3, and Outcome 1-3. The numerical impacts are formatted as text strings with symbols (e.g., "-800 EUR", "+15 pts"), so they must be stripped of text and converted to integers before computation.
@@ -16,7 +15,7 @@ Anaé Crépelle CL10
 #    - A gauge drops below 0: The game checks conditions after every choice and immediately stops the loop, triggering the "Fired" screen.
 #    - The CSV file is missing or renamed: A try/except block catches the FileNotFoundError and safely alerts the player instead of fatally crashing.
 
-import 
+
 import random
 import csv
 import datetime
