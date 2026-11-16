@@ -43,10 +43,25 @@ DELIVERABLE
 # - There are empty lines between names.
 # - The names are not sorted by last name.
 
-# 1. In:
+# 1. In: # The program reads names from names.txt.
+
 # 2. Process, problem by problem:
-# 3. Out:
+# Remove empty lines using strip().
+# Remove extra spaces using split() and join().
+# Fix capitalization using title().
+# Sort the names alphabetically by last name.
+# Save the cleaned names in a new file.
+
+# 3. Out: 
+# A new file called cleaned_names.txt containing
+# cleaned names sorted by last name.
+# The original names.txt file stays unchanged.
+
 # 4. How I decide which word is the last name:
+# The last name is usually the last word in each line.
+# For example, in "Ada Lovelace", Lovelace is the last name.
+# For "Guido van Rossum", I treat "van Rossum" as the surname.
+# I sort names alphabetically without considering capitalization.
 
 
 # Your code below
