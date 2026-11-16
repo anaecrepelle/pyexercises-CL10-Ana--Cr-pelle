@@ -126,3 +126,20 @@ def greet(name):
 ```
 
 What argument does the function `greet` expect?
+
+---
+## 2026-11-16 13:04, in .
+
+**Me:** how to get a return from a function in python
+
+**Tutor:**
+
+A function returns a value with the `return` keyword.
+
+```python
+def calculate_profit(cost, revenue):
+    # TODO: compute profit and return it
+    pass
+```
+
+What keyword tells Python to send a value back from the function?

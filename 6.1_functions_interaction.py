@@ -28,10 +28,70 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process, function by function:
-# 3. Out:
+# 1. In: a number
+# 2. Process, function by function: 
+#    - `is_zero` checks if the number is exactly zero.
+#    - `is_positive` checks if the number is greater than zero.
+#    - `is_negative` checks if the number is less than zero.
+#    - `detailed_message` uses these three small functions to figure out the number's sign and build a descriptive sentence.
+# 3. Out: A text string stating whether the number is zero, positive, or negative.
 # 4. The question my fourth function answers:
+#    - The fourth function, `detailed_message`, answers the question: "What is the sign of the number?"
 
 
 # Your code below
+number = -4
+if number > 0:
+    print("The number is positive")
+else:
+    print("The number is negative")
+
+number = 5
+if number > 0:
+    print("The number is positive")
+else:
+    print("The number is negative")
+
+number = 9
+if number > 0:
+    print("The number is positive")
+else:
+    print("The number is negative")
+
+def check(number):
+    if number > 0:
+        print("The number is positive")
+    else:
+        print("The number is negative")
+
+num = int(input("Enter a number:"))
+check(num)
+
+
+
+def is_positive(num):
+    return num > 0
+
+def is_negative(num):
+    return num < 0
+
+def is_zero(num):
+    return num == 0
+
+def is_even(num):
+    return num % 2 == 0
+
+def detailed_message(num):
+    if is_zero(num):
+        return "The number is zero."
+    elif is_positive(num):
+        return "The number is positive."
+    elif is_negative(num):
+        return "The number is negative."
+    elif is_even(num):
+        return "The number is even."
+    else:
+        return "The number is odd."
+
+number = 0
+print(detailed_message(number))
